@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treinar</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/treino.css" />
+</head>
+
+<body class="treino">
+
+  <!-- Logo -->
+  <a href="index.html" class="logo">
+    <img src="img/unifor.png" alt="Unifor">
+  </a>
+
+  <!-- Timer em círculo abaixo da logo -->
+  <div class="timer-wrap">
+    <div id="timer" class="timer-circle">05:00</div>
+  </div>
+
+  <!-- Área central do vídeo -->
+  <main class="treino-area">
+    <div class="questao-container">
+      <video id="videoQuestao" playsinline muted autoplay></video>
+    </div>
+  </main>
+
+  <!-- Resposta (aparece acima do botão Resposta) -->
+  <div id="respostaBox" class="resposta-box hidden">
+    <span id="respostaTexto"></span>
+  </div>
+
+  <!-- Botões -->
+  <div class="botoes">
+    <a href="index.html" class="btn">Voltar</a>
+    <button id="respostaBtn" class="btn">Resposta</button>
+    <button id="proximaBtn" class="btn">Próxima</button>
+  </div>
+
+  <script src="js/treino.js"></script>
+</body>
+</html>

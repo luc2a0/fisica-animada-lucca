@@ -1,0 +1,75 @@
+/* =========================
+   CONTAINER GERAL
+========================= */
+
+.lista-container {
+  max-width: 900px;
+  margin: 120px auto 160px;
+  padding: 0 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* =========================
+   QUESTÃO
+========================= */
+
+.questao {
+  background: rgba(80, 60, 160, 0.35);
+  padding: 32px;
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Título */
+.questao h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* Vídeo */
+.questao video {
+  width: 100%;
+  max-height: 420px;
+  margin-bottom: 16px;
+  background: #000;
+}
+
+/* Texto */
+.questao p {
+  color: #e6e6ff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* =========================
+   BOTÃO VOLTAR
+========================= */
+
+.botao-voltar {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 16px 48px;
+
+
+  background: #9b8cff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+
+  box-shadow: 0 10px 26px rgba(155, 140, 255, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao-voltar:hover {
+  transform: translateX(-50%) scale(1.06);
+  box-shadow: 0 14px 34px rgba(155, 140, 255, 0.6);
+}
